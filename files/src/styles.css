@@ -1,0 +1,209 @@
+@font-face {
+    font-family: Poppins;
+    src: url("fonts\Poppins\Poppins-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+canvas {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    font-family: Poppins, sans-serif;
+}
+
+main {
+    font-family: Consolas, sans-serif; 
+}
+
+#settings {
+    background-color: black;
+    padding: 12px 34px 12px 34px;
+    border-radius: 20px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    z-index: 1;
+}
+
+#scroll-down {
+    background-color: black;
+    padding: 12px 34px 12px 34px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+#info{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#info > #title {
+    font-size: 11.5rem;
+    line-height: 10rem;
+    text-shadow: 7px 0px #e4e4e4;
+}
+
+#info > #subtitle {
+    font-size: 1.5rem;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 3rem 0 0 0;
+  }
+  
+.nav-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.nav-active {
+    font-weight: bold;
+    color:#CFA543;
+}
+
+#about-content, #projects-content, #designs-content-text{
+    display: flex;
+    margin-left: 7rem;
+    padding-right: 7rem;
+}
+
+#about-content > img, #projects-content > img {
+    width: 77px;
+    height: 77px;
+    padding-right: 20px;
+}
+
+#about-content-text, #projects-content-text, #designs-content-text {
+    font-size: 1.2rem;
+}
+
+#about {
+    padding: 230px 0;
+}
+
+#projects {
+    background: #040404;
+    height: 680px;
+}
+
+#projects-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+}
+
+.icon {
+    background-color: black ;
+}
+
+.designs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.designs-container > div {
+    text-align: center;
+}
+
+#designs {
+    padding-top: 207px;
+    padding-bottom: 167px;
+}
+
+#designs-content-text{
+    margin-left: 209px;
+    margin-bottom: 60px;
+}
+
+#designs-content-text > a {
+    padding-left: 17px;
+}
+
+#design-2 {
+    margin-top: -35px;
+}
+
+footer {
+    background-color: #040404;
+    padding: 100px 0;
+}
+
+.footer-category {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#footer-container {
+    display: grid;
+    grid-template-columns: 20rem 20rem 20rem;
+    margin-left: 7rem;
+    padding-right: 7rem;
+    font-size: 18px;
+    list-style: none;
+}
+
+#beam {
+    background: #8047D5;
+    height: 11px;
+}
+
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+  }
+
+a:link, a:visited, a:active {
+color: white;
+text-decoration: none;
+}
+
+a:hover {
+color: #CFA543;
+text-decoration: none;   
+}
