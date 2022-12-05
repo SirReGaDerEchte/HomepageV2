@@ -94,8 +94,8 @@ main {
 
 #about-content, #projects-content, #designs-content-text{
     display: flex;
-    margin-left: 7rem;
-    padding-right: 7rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 #about-content > img, #projects-content > img {
@@ -130,11 +130,16 @@ main {
 
 .designs-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
 }
 
 .designs-container > div {
     text-align: center;
+}
+
+.designs-container > div > img {
+    max-width: 24,8125rem;
+    max-height: 14rem;
 }
 
 #designs {
